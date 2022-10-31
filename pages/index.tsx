@@ -1,86 +1,68 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import DefaultLayout from '../layouts/default';
+import data from '../contents/data.json';
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  token_amount: number;
+  image: string;
+};
+
+// トークンを送ることで所有者が変わるため、送信元アドレスの切り替えが必要
+
+const products: Array<Product> = data.products;
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <DefaultLayout>
+      <div className="bg-white">
+        <div className="mx-auto max-w-2xl py-16 px-8 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+            野菜
+          </h2>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            {products.map((product) => (
+              <div key={product.id} className="group relative">
+                <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                  <img
+                    src={product.image || 'http://placehold.jp/300x300.png'}
+                    alt={product.name}
+                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div className="mt-4 flex justify-between">
+                  <h3 className="text-gray-700">
+                    {/* <a href={`/product/${product.id}`}>
+                      <span aria-hidden="true" className="absolute inset-0" /> */}
+                    {product.name}
+                    {/* </a> */}
+                  </h3>
+                  <div className="text-right">
+                    <p className="font-medium text-gray-900">
+                      ¥{product.price}
+                    </p>
+                    <p className="font-medium text-gray-700">
+                      {product.token_amount} GFT
+                    </p>
+                  </div>
+                </div>
+                <div className="py-2 my-4 border-2 border-sky-700 rounded hover:opacity-75">
+                  {/* blockchainとの通信場所 */}
+                  {/* 書き込み処理してからページ遷移する */}
+                  <a href={`/purchased?id=${product.id}`}>
+                    <p className="text-center text-sky-700">購入</p>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
+      </div>
+    </DefaultLayout>
+  );
+};
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
-  )
-}
-
-export default Home
+export default Home;

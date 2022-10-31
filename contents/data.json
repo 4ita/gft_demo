@@ -1,0 +1,78 @@
+{
+  "title": "DEMO",
+  "description": "デモアプリ",
+  "accounts": [
+    { "name": "名前１", "address": "0xaddress1" },
+    { "name": "名前２", "address": "0xaddress2" },
+    { "name": "名前３", "address": "0xaddress3" },
+    { "name": "名前４", "address": "0xaddress4" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "野菜１",
+      "price": 200,
+      "token_amount": 20,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "野菜２",
+      "price": 250,
+      "token_amount": 25,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "野菜３",
+      "price": 160,
+      "token_amount": 16,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "野菜４",
+      "price": 300,
+      "token_amount": 30,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "野菜５",
+      "price": 250,
+      "token_amount": 25,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "野菜６",
+      "price": 200,
+      "token_amount": 20,
+      "image": ""
+    },
+    { "id": 7, "name": "野菜７", "price": 250, "token_amount": 25, "image": "" }
+  ],
+  "tokens": [
+    {
+      "id": 1,
+      "name": "野菜１",
+      "purchase_date": "2022/10/09",
+      "producer": "人名",
+      "place": "都道府県"
+    },
+    {
+      "id": 2,
+      "name": "野菜２",
+      "purchase_date": "2022/10/23",
+      "producer": "人名",
+      "place": "都道府県"
+    },
+    {
+      "id": 3,
+      "name": "野菜３",
+      "purchase_date": "2022/11/09",
+      "producer": "人名",
+      "place": "都道府県"
+    }
+  ]
+}
