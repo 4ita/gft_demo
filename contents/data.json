@@ -1,12 +1,20 @@
 {
   "title": "DEMO",
   "description": "デモアプリ",
+  "domainURL": "http://localhost:3000",
   "accounts": [
-    { "name": "名前１", "address": "0xaddress1" },
-    { "name": "名前２", "address": "0xaddress2" },
-    { "name": "名前３", "address": "0xaddress3" },
-    { "name": "名前４", "address": "0xaddress4" }
+    {
+      "name": "Aさん",
+      "address": "0xcFF1F72de9f3ac3125aCE9570245CABe98e24078",
+      "privKey": "76d7ccb1edc4bc2ef7019dcd6047ea4359ae1304a3f9874ef9b95d4064e68de6"
+    },
+    { "name": "Bさん", "address": "0xB7bC191f772E1C3400c73400C7ab_fake" },
+    { "name": "Cさん", "address": "0x4492f945CABe98e2FBaC5bFBBCba_fake" }
   ],
+  "contractAddress": "0x3E477469c6B12e7c489b56C6448c56FeDC15C91b",
+  "supplierAddress": "0xF2B4a0013789712B6b593407AF448C04e86B861D",
+  "supplierPrivKey": "adb2770d41980165ba47493623bccf30c2a56097deaa43cce371246b9e728371",
+  "RPC": "https://goerli.infura.io/v3/755517a76c7e4e84bda1134376578f57",
   "products": [
     {
       "id": 1,
@@ -50,28 +58,104 @@
       "token_amount": 20,
       "image": ""
     },
-    { "id": 7, "name": "野菜７", "price": 250, "token_amount": 25, "image": "" }
+    {
+      "id": 7,
+      "name": "野菜７",
+      "price": 300,
+      "token_amount": 30,
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "野菜８",
+      "price": 240,
+      "token_amount": 24,
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "野菜９",
+      "price": 180,
+      "token_amount": 18,
+      "image": ""
+    },
+    {
+      "id": 10,
+      "name": "野菜１０",
+      "price": 220,
+      "token_amount": 22,
+      "image": ""
+    }
   ],
   "tokens": [
     {
       "id": 1,
       "name": "野菜１",
-      "purchase_date": "2022/10/09",
-      "producer": "人名",
-      "place": "都道府県"
+      "purchase_date": "2022/11/18",
+      "producer": "野菜名農園",
+      "place": "野菜の産地"
     },
     {
       "id": 2,
       "name": "野菜２",
-      "purchase_date": "2022/10/23",
-      "producer": "人名",
+      "purchase_date": "2022/11/18",
+      "producer": "鈴木ファーム",
       "place": "都道府県"
     },
     {
       "id": 3,
       "name": "野菜３",
-      "purchase_date": "2022/11/09",
-      "producer": "人名",
+      "purchase_date": "2022/11/18",
+      "producer": "高橋農園",
+      "place": "都道府県"
+    },
+    {
+      "id": 4,
+      "name": "野菜２",
+      "purchase_date": "2022/11/18",
+      "producer": "田中ファーム",
+      "place": "都道府県"
+    },
+    {
+      "id": 5,
+      "name": "野菜１",
+      "purchase_date": "2022/11/18",
+      "producer": "伊藤農園",
+      "place": "都道府県"
+    },
+    {
+      "id": 6,
+      "name": "野菜２",
+      "purchase_date": "2022/11/18",
+      "producer": "渡辺ファーム",
+      "place": "都道府県"
+    },
+    {
+      "id": 7,
+      "name": "野菜１",
+      "purchase_date": "2022/11/18",
+      "producer": "山本農園",
+      "place": "都道府県"
+    },
+    {
+      "id": 8,
+      "name": "野菜２",
+      "purchase_date": "2022/11/18",
+      "producer": "中村ファーム",
+      "place": "都道府県"
+    },
+    {
+      "id": 9,
+      "name": "野菜３",
+      "purchase_date": "2022/11/18",
+      "producer": "小林農園",
+      "place": "都道府県"
+    },
+    {
+      "id": 10,
+      "name": "野菜３",
+      "purchase_date": "2022/11/18",
+      "producer": "加藤ファーム",
       "place": "都道府県"
     }
   ]

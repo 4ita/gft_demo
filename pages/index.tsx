@@ -10,8 +10,6 @@ type Product = {
   image: string;
 };
 
-// トークンを送ることで所有者が変わるため、送信元アドレスの切り替えが必要
-
 const products: Array<Product> = data.products;
 
 const Home: NextPage = () => {
@@ -34,12 +32,7 @@ const Home: NextPage = () => {
                   />
                 </div>
                 <div className="mt-4 flex justify-between">
-                  <h3 className="text-gray-700">
-                    {/* <a href={`/product/${product.id}`}>
-                      <span aria-hidden="true" className="absolute inset-0" /> */}
-                    {product.name}
-                    {/* </a> */}
-                  </h3>
+                  <h3 className="text-gray-700">{product.name}</h3>
                   <div className="text-right">
                     <p className="font-medium text-gray-900">
                       ¥{product.price}
@@ -50,8 +43,6 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className="py-2 my-4 border-2 border-sky-700 rounded hover:opacity-75">
-                  {/* blockchainとの通信場所 */}
-                  {/* 書き込み処理してからページ遷移する */}
                   <a href={`/purchased?id=${product.id}`}>
                     <p className="text-center text-sky-700">購入</p>
                   </a>
