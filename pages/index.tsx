@@ -10,7 +10,20 @@ type Product = {
   image: string;
 };
 
+type Token = {
+  id: number;
+  name: string;
+  purchase_date: string;
+  producer: string;
+  place: string;
+};
+
 const products: Array<Product> = data.products;
+const tokens: Array<Token> = data.tokens;
+const URL =
+  process.env.NODE_ENV === 'production'
+    ? data.domainURL
+    : 'http://localhost:3000';
 
 const Home: NextPage = () => {
   return (
@@ -26,12 +39,20 @@ const Home: NextPage = () => {
               <div key={product.id} className="group relative">
                 <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
                   <img
-                    src={product.image || 'http://placehold.jp/300x300.png'}
+                    src={
+                      product.image
+                        ? `${URL}/images/${product.image}`
+                        : 'http://placehold.jp/300x300.png'
+                    }
                     alt={product.name}
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                   />
                 </div>
-                <div className="mt-4 flex justify-between">
+                <p className="text-sm mt-4 text-gray-700">
+                  {tokens[Number(product.id) - 1].place} -{' '}
+                  {tokens[Number(product.id) - 1].producer}
+                </p>
+                <div className="mt-0 flex justify-between">
                   <h3 className="text-gray-700">{product.name}</h3>
                   <div className="text-right">
                     <p className="font-medium text-gray-900">

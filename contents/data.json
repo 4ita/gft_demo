@@ -1,7 +1,7 @@
 {
   "title": "DEMO",
   "description": "デモアプリ",
-  "domainURL": "http://localhost:3000",
+  "domainURL": "https://gft-demo.azurewebsites.net",
   "accounts": [
     {
       "name": "Aさん",
@@ -18,145 +18,215 @@
   "products": [
     {
       "id": 1,
-      "name": "野菜１",
+      "name": "なす、パプリカ他",
       "price": 200,
       "token_amount": 20,
-      "image": ""
+      "image": "image_1.png"
     },
     {
       "id": 2,
-      "name": "野菜２",
+      "name": "いちご",
       "price": 250,
       "token_amount": 25,
-      "image": ""
+      "image": "image_2.png"
     },
     {
       "id": 3,
-      "name": "野菜３",
+      "name": "さつまいも",
       "price": 160,
       "token_amount": 16,
-      "image": ""
+      "image": "image_3.png"
     },
     {
       "id": 4,
-      "name": "野菜４",
+      "name": "かぶ",
       "price": 300,
       "token_amount": 30,
-      "image": ""
+      "image": "image_4.png"
     },
     {
       "id": 5,
-      "name": "野菜５",
+      "name": "しいたけ",
       "price": 250,
       "token_amount": 25,
-      "image": ""
+      "image": "image_5.png"
     },
     {
       "id": 6,
-      "name": "野菜６",
+      "name": "ゆず",
       "price": 200,
       "token_amount": 20,
-      "image": ""
+      "image": "image_6.png"
     },
     {
       "id": 7,
-      "name": "野菜７",
+      "name": "かぶ、白菜他",
       "price": 300,
       "token_amount": 30,
-      "image": ""
+      "image": "image_7.png"
     },
     {
       "id": 8,
-      "name": "野菜８",
+      "name": "いちご",
       "price": 240,
       "token_amount": 24,
-      "image": ""
+      "image": "image_8.png"
     },
     {
       "id": 9,
-      "name": "野菜９",
+      "name": "大根",
       "price": 180,
       "token_amount": 18,
-      "image": ""
+      "image": "image_9.png"
     },
     {
       "id": 10,
-      "name": "野菜１０",
+      "name": "シャインマスカット",
+      "price": 400,
+      "token_amount": 40,
+      "image": "image_10.png"
+    },
+    {
+      "id": 11,
+      "name": "もも",
+      "price": 350,
+      "token_amount": 35,
+      "image": "image_11.png"
+    },
+    {
+      "id": 12,
+      "name": "いちご",
+      "price": 330,
+      "token_amount": 33,
+      "image": "image_12.png"
+    },
+    {
+      "id": 13,
+      "name": "ぶどう",
+      "price": 500,
+      "token_amount": 50,
+      "image": "image_13.png"
+    },
+    {
+      "id": 14,
+      "name": "じゃがいも、玉ねぎ他",
       "price": 220,
       "token_amount": 22,
-      "image": ""
+      "image": "image_14.png"
+    },
+    {
+      "id": 15,
+      "name": "ゴーヤ",
+      "price": 180,
+      "token_amount": 18,
+      "image": "image_15.png"
     }
   ],
   "tokens": [
     {
       "id": 1,
-      "name": "野菜１",
+      "name": "なす、パプリカ他",
       "purchase_date": "2022/11/18",
-      "producer": "野菜名農園",
-      "place": "野菜の産地"
+      "producer": "やさい農園",
+      "place": "高知県"
     },
     {
       "id": 2,
-      "name": "野菜２",
+      "name": "いちご",
       "purchase_date": "2022/11/18",
-      "producer": "鈴木ファーム",
-      "place": "都道府県"
+      "producer": "苺ファーム",
+      "place": "栃木県"
     },
     {
       "id": 3,
-      "name": "野菜３",
+      "name": "さつまいも",
       "purchase_date": "2022/11/18",
-      "producer": "高橋農園",
-      "place": "都道府県"
+      "producer": "薩摩農園",
+      "place": "鹿児島県"
     },
     {
       "id": 4,
-      "name": "野菜２",
+      "name": "かぶ",
       "purchase_date": "2022/11/18",
-      "producer": "田中ファーム",
-      "place": "都道府県"
+      "producer": "蕪ファーム",
+      "place": "千葉県"
     },
     {
       "id": 5,
-      "name": "野菜１",
+      "name": "しいたけ",
       "purchase_date": "2022/11/18",
-      "producer": "伊藤農園",
-      "place": "都道府県"
+      "producer": "きのこ農園",
+      "place": "徳島県"
     },
     {
       "id": 6,
-      "name": "野菜２",
+      "name": "ゆず",
       "purchase_date": "2022/11/18",
-      "producer": "渡辺ファーム",
-      "place": "都道府県"
+      "producer": "柑橘ファーム",
+      "place": "高知県"
     },
     {
       "id": 7,
-      "name": "野菜１",
+      "name": "かぶ、白菜他",
       "purchase_date": "2022/11/18",
-      "producer": "山本農園",
-      "place": "都道府県"
+      "producer": "ベジ農園",
+      "place": "茨城県"
     },
     {
       "id": 8,
-      "name": "野菜２",
+      "name": "いちご",
       "purchase_date": "2022/11/18",
-      "producer": "中村ファーム",
-      "place": "都道府県"
+      "producer": "苺園",
+      "place": "栃木県"
     },
     {
       "id": 9,
-      "name": "野菜３",
+      "name": "大根",
       "purchase_date": "2022/11/18",
-      "producer": "小林農園",
-      "place": "都道府県"
+      "producer": "ダイコン農園",
+      "place": "富山県"
     },
     {
       "id": 10,
-      "name": "野菜３",
+      "name": "シャインマスカット",
       "purchase_date": "2022/11/18",
-      "producer": "加藤ファーム",
-      "place": "都道府県"
+      "producer": "みどりファーム",
+      "place": "山梨県"
+    },
+    {
+      "id": 11,
+      "name": "もも",
+      "purchase_date": "2022/11/18",
+      "producer": "モモ園",
+      "place": "福島県"
+    },
+    {
+      "id": 12,
+      "name": "いちご",
+      "purchase_date": "2022/11/18",
+      "producer": "紅ファーム",
+      "place": "栃木県"
+    },
+    {
+      "id": 13,
+      "name": "ぶどう",
+      "purchase_date": "2022/11/18",
+      "producer": "紫農園",
+      "place": "山梨県"
+    },
+    {
+      "id": 14,
+      "name": "じゃがいも、玉ねぎ他",
+      "purchase_date": "2022/11/18",
+      "producer": "ポテトファーム",
+      "place": "北海道"
+    },
+    {
+      "id": 15,
+      "name": "ゴーヤ",
+      "purchase_date": "2022/11/18",
+      "producer": "ゴーヤ農園",
+      "place": "沖縄県"
     }
   ]
 }

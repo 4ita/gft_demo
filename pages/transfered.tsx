@@ -44,7 +44,7 @@ const Transfered: NextPage = () => {
           </div>
           <p className="text-slate-500">トランザクション</p>
           <p className="truncate text-lg text-sky-700 underline underline-offset-auto truncate">
-            <a href={`https://goerli.etherscan.io/tx/${txHash}`}>{txHash}</a>
+            <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">{txHash}</a>
           </p>
           <div className="my-8">
             <p className="text-slate-500">送った人</p>

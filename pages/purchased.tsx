@@ -19,6 +19,11 @@ type Token = {
   place: string;
 };
 
+const URL =
+  process.env.NODE_ENV === 'production'
+    ? data.domainURL
+    : 'http://localhost:3000';
+
 const Purchased: NextPage = () => {
   const router = useRouter();
   const lotId = Number(router.query.id as string);
@@ -38,11 +43,14 @@ const Purchased: NextPage = () => {
             <p>{product.token_amount} GFTが付与されました！</p>
           </div>
           <img
-            src={product.image || 'http://placehold.jp/300x300.png'}
+            src={
+              product.image
+                ? `${URL}/images/${product.image}`
+                : 'http://placehold.jp/300x300.png'
+            }
             alt={product.name}
             className="h-full w-full object-cover object-center lg:h-full lg:w-full"
           />
-          <p></p>
           <div className="mt-8">
             <div className="flex py-2 border-b border-b-gray-300">
               <p className="w-36 text-gray-500">銘柄</p>
