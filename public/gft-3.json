@@ -1,8 +1,8 @@
 {
   "id": 3,
-  "name": "野菜１",
+  "name": "かぶ",
   "kgCO2":"0.3",
   "purchase_date": "2022/11/18",
-  "producer": "農園",
-  "place": "都道府県"
+  "producer": "蕪ファーム",
+  "place": "千葉県"
 }

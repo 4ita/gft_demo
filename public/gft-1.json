@@ -1,8 +1,7 @@
 {
   "id": 1,
-  "name": "野菜１",
+  "name": "いちご",
   "kgCO2":"0.25",
   "purchase_date": "2022/11/18",
-  "producer": "農園",
-  "place": "都道府県"
+  "producer": "苺ファーム"
 }

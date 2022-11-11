@@ -1,8 +1,8 @@
 {
   "id": 6,
-  "name": "野菜１",
+  "name": "かぶ、白菜他",
   "kgCO2":"0.3",
   "purchase_date": "2022/11/18",
-  "producer": "農園",
-  "place": "都道府県"
+  "producer": "ベジ農園",
+  "place": "茨城県"
 }
