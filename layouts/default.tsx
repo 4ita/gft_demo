@@ -14,10 +14,13 @@ const DefaultLayout = ({ children, title, description }: Props) => {
     <>
       <Head>
         <title>{data.title || 'title'}</title>
-        <meta
-          name="description"
-          content={data.description || 'description'}
-        />
+        <meta name="description" content={data.description || 'description'} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <main className="">{children}</main>

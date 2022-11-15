@@ -37,7 +37,7 @@ const Purchased: NextPage = () => {
   return (
     <DefaultLayout>
       <div className="bg-white">
-        <div className="mx-auto max-w-sm px-8 py-4 sm:py-24 sm:px-6">
+        <div className="mx-auto max-w-sm px-8 py-4 sm:px-6">
           <div className="text-center mb-4">
             <p>ご購入ありがとうございます。</p>
             <p>{product.token_amount} GFTが付与されました！</p>
