@@ -1,27 +1,52 @@
-# Next.js + Tailwind CSS Example
+# Demo application for Green Food Token
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Directories
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- [components](./components/): UI components for pages
+- [contracts](./contracts/): Green Food Token contract
+- [pages](./pages/): web application pages
+- [public](./public/): images shown in each page, JSON files for GFT
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Execute this application on localhost.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```console
+$ yarn dev
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Deploy it to the cloud with Microsoft Azure App Service.
+
+## Requirement
+
+Install below packages or softwares.
+
+- Node.js: using Next.js / developing Ethereum DApps
+- Yarn: package manangement software for Node.js
+- Truffle: development framework for Ethereum DApps
+- Ganache: using local testnet of Ethereum
+
+This repository developed for this version.
+
+```console
+$ node -v
+v16.13.2
+
+$ truffle version
+Truffle v5.6.3 (core: 5.6.3)
+Ganache v7.4.4
+Solidity v0.5.16 (solc-js)
+Node v16.13.2
+Web3.js v1.7.4
+
+$ yarn list --pattern ethers
+yarn list v1.22.15
+├─ @ethersproject/abi@5.7.0
+├─ （中略）
+└─ ethers@5.7.2
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Development Environment
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- OS: macOS Monterey (Version 12.1)
+- Processor: 2 GHz Quad-Core Intel Core i5
